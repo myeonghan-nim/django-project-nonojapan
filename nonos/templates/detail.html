@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+  <div class="jumbotron m-5">
+
+    <h1 class="display-4">{{no.product}}</h1>
+    
+    <p class="lead">{{no.info}}</p>
+
+    <hr class="my-4">
+
+    <p>{{no.replace}}</p>
+
+    <a class="btn btn-warning btn-lg" href="/nonos/{{no.id}}/edit/" role="button">Modify</a>
+    <a class="btn btn-danger btn-lg" href="/nonos/{{no.id}}/delete/" role="button">Delete</a>
+
+    <a class="btn btn-primary btn-lg" href="/nonos/" role="button">Go to list</a>
+
+  </div>
+
+{% endblock %}

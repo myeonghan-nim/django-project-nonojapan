@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block body %}
+
+  <div class="m-5 row">
+
+    {% for no in nos%}
+      <div class="card col-4 m-1" style="width: 10rem;">
+
+        <img src="{% static 'images/nono_logo_2.png' %}" class="card-img-top" alt="">
+        
+        <div class="card-body">
+          <h5 class="card-title">{{no.product}}</h5>
+          <p class="card-text">{{no.replace}}</p>
+          <a href="/nonos/{{no.id}}/detail" class="btn btn-primary">Show more info</a>
+        </div>
+
+      </div>
+    {% endfor %}
+
+  </div>
+
+{% endblock %}
