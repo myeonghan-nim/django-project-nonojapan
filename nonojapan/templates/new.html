@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block body %}
+  <form class="m-5" action="/nonojapan/create/">
+    <div class="form-group">
+      <label for="product">Product</label>
+      <input type="text" class="form-control" id="product" name="product" placeholder="Enter product">
+    </div>
+    <div class="form-group">
+      <label for="replace">Replace</label>
+      <input type="text" class="form-control" id="replace" name="replace" placeholder="Enter replacement">
+    </div>
+    <div class="form-group">
+      <label for="info">Info</label>
+      <input type="text" class="form-control" id="info" name="info" placeholder="Enter infomation">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block body %}
+  <form class="m-5" action="/nonojapan/{{good.id}}/update/">
+    <div class="form-group">
+      <label for="product">Jap Product</label>
+      <input type="text" class="form-control" id="product" name="product" value="{{good.product}}">
+    </div>
+    <div class="form-group">
+      <label for="replace">Replacement</label>
+      <input type="text" class="form-control" id="replace" name="replace" value="{{good.replace}}">
+    </div>
+    <div class="form-group">
+      <label for="info">Information</label>
+      <input type="text" class="form-control" id="info" name="info" value="{{good.info}}">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+{% endblock %}
