@@ -1,6 +1,6 @@
-# README
+# Clone Project: nonojapan
 
-## Make class in django
+## Model
 
 ```python
 class NoNoJapan(models.Model):
@@ -8,4 +8,3 @@ class NoNoJapan(models.Model):
     replace = models.CharField(max_length=100)
     info = models.CharField(max_length=100)
 ```
-
