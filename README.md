@@ -1,4 +1,4 @@
-# Clone Project: nonojapan
+# Project: nonojapan
 
 ## Model
 
