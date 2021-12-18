@@ -1,6 +1,6 @@
 # Project: nonojapan
 
-## Model
+## model
 
 ```python
 class NoNoJapan(models.Model):
